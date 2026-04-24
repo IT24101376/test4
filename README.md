@@ -72,3 +72,23 @@ npm install  # or yarn install
 npm start    # or yarn start
 
 VITE_APP_URL=http://localhost:5173/api(frontend)
+```
+
+## Serial Number Feature
+
+The application now includes a **Serial Number** field for each item. This field is:
+- Collected in the **Add New Item** form.
+- Displayed on the **Home (Items) page** alongside other item details.
+- Editable via the **Edit** form on each item card.
+- Persisted in the database through the backend API.
+
+### Submission Screenshots
+
+After running both the backend (`npm run dev` inside `item-manager/backend`) and the frontend (`npm run dev` inside `item-manager/frontend/vite-project`), capture the following screenshots and save them in a `screenshots/` folder:
+
+| Filename | What to capture |
+|---|---|
+| `screenshots/01-add-item-form.png` | The Add New Item form showing the Serial Number input field |
+| `screenshots/02-items-list.png` | The Items list showing Serial Number displayed for each item |
+| `screenshots/03-edit-item-form.png` | The Edit form for an item with the Serial Number field populated |
+| `screenshots/04-item-saved.png` | The Items list after saving, confirming Serial Number is persisted |

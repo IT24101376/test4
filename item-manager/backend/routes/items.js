@@ -16,7 +16,7 @@ const item = new Item({
 name: req.body.name,
 description: req.body.description,
 price: req.body.price,   
-// will work once you add price to the model
+serialNumber: req.body.serialNumber || '',
 });
 try {
 const newItem = await item.save();
